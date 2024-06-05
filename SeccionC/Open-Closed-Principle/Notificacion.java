@@ -13,12 +13,13 @@ class NotificarSMS implements Notificacion{
 class NotificarEmail implements Notificacion{
     @Override
     public void notificar(PaymentMethod pago) {
+	// enviar Email
     }
 }
 
 class NotificarSignal implements Notificacion{
     @Override
     public void notificar(PaymentMethod pago) {
-		// enviar SMS
+	// enviar SMS
     }
 }
