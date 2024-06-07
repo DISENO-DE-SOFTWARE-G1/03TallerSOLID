@@ -1,15 +1,18 @@
-public class Pago implements PaymentMethod,Facturable{
+public class Pago implements PaymentMethod{
     // atributos aquí
     
     @Override
     public void calcularImpuestosFactura() {
         // calcula los impuestos asociados a la compra
     }
-    
+}
+
+public class Factura{
+    // atributos aquí
     @Override
     public void generarFactura() {
         // generar una nueva factura
-    }
+    }   
 }
 
 public class PagoPaypal extends Pago{
@@ -21,5 +24,4 @@ public class PagoPaypal extends Pago{
    public void realizarCobro(double monto) {
        // realizar cobro directamente
    }
-   
-}
+
